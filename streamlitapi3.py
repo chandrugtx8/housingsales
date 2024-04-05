@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 
 # Load the features (X)
-df = pd.read_csv('C:/Users/chandru/Desktop/HS/Flat prices.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/chandrugtx8/housingsales/main/Flat%20prices.csv')
 df['month'] = pd.to_datetime(df['month'])
 df['year'] = df['month'].dt.year
 df['month_of_year'] = df['month'].dt.month
