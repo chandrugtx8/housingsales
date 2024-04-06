@@ -31,13 +31,13 @@ def main(X):
     storey_range = st.selectbox("Select the storey range:", storey_range_options)
 
     floor_area_sqm_str = st.text_input("Enter the floor area (in sqm): ")
-    st.write("Floor area input:", floor_area_sqm_str)  # Debug statement
+    
 
     flat_model_options = df['flat_model'].unique()
     flat_model = st.selectbox("Select the flat model:", flat_model_options)
 
     lease_commence_date_str = st.text_input("Enter the lease commence date: ")
-    st.write("Lease commence date input:", lease_commence_date_str)  # Debug statement
+    
 
     if st.button('Predict'):
         try:
